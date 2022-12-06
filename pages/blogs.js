@@ -13,7 +13,7 @@ const builder = imageUrlBuilder(client)
 
 const Blogs = ({blog}) => {
   return (
-    <section className='my-20'>
+    <section className='my-20 px-3 md:px-0'>
         <div className='container mx-auto'>
           <h2 className='text-4xl uppercase font-bold mb-10 text-center'>Explore daily blogs</h2>
           <div className='grid grid-cols-1 md:grid-cols-3 gap-6'>

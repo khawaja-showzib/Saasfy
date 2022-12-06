@@ -56,7 +56,7 @@ const Header = () => {
                     <Link href='#'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>About</li></Link>
                     <Link href='#'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>Services</li></Link>
                     <Link href='#'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>Clients</li></Link>
-                    <Link href='#'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>Blogs</li></Link>
+                    <Link href='/blogs'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>Blogs</li></Link>
                     <Link href='#'><li className='text-lg font-medium border-b-2 border-transparent transition duration-500 hover:border-primary-400'>Contact</li></Link>
                 </ul>
             </div>

@@ -6,6 +6,7 @@ import Card from '../components/Card'
 import Sdata from '../components/ServicesData'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { IoIosCall, IoMdMail } from 'react-icons/io'
+import Head from 'next/head';
 
 const client = createClient({
   projectId: 'f1a85crc',
@@ -21,6 +22,11 @@ const index = ({ blog }) => {
 
     <>
 
+      <Head>
+        <title>Saasyfy || Sanity Blog</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
+
       <section className='bg-gradient-to-r from-secondary-400 to-primary-400 py-20 px-4 md:px-0'>
         <div className='container mx-auto grid grid-cols-1 md:grid-cols-2 place-items-center'>
           <div>
@@ -28,7 +34,7 @@ const index = ({ blog }) => {
             <p className='text-gray-200 text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at qui eum esse voluptate ad earum incidunt ut molestiae? Suscipit nobis ea reiciendis delectus harum ab odio modi in doloribus.</p>
           </div>
           <div>
-            <img  src="./banner-img.svg" alt="Banner Image" />
+            <img src="./banner-img.svg" alt="Banner Image" />
           </div>
         </div>
       </section>
@@ -85,7 +91,7 @@ const index = ({ blog }) => {
       </section>
 
       <section className='container mx-auto my-20 md:my-36 px-4 md:px-0' id='clients'>
-      <h2 className='text-4xl uppercase font-bold mb-10 text-center'>Our Clients</h2>
+        <h2 className='text-4xl uppercase font-bold mb-10 text-center'>Our Clients</h2>
         <div className='grid mt-4 gap-10 place-items-center grid-cols-1 md:grid-cols-5'>
           <div className='grayscale transition duration-500 hover:grayscale-0'>
             <img src="./Client-1.svg" alt="" />
@@ -138,7 +144,7 @@ const index = ({ blog }) => {
           </div>
 
           <div>
-            <img  src="./contact.svg" alt="" />
+            <img src="./contact.svg" alt="" />
           </div>
         </div>
       </section>

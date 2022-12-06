@@ -41,7 +41,7 @@ const Header = () => {
                 <section className='container mx-auto py-6 block md:hidden'>
                     <nav className='flex justify-between items-center'>
                         <div>
-                            <span className='font-extrabold text-2xl text-primary-400'>SaasyFy</span>
+                        <Link href='/'><span className='font-extrabold text-2xl text-primary-400'>SaasyFy</span></Link>
                         </div>
                         <div>
                             <RxHamburgerMenu onClick={toggleMenu} className='text-2xl'/>

@@ -7,6 +7,7 @@ import Sdata from '../components/ServicesData'
 import { FaMapMarkerAlt } from 'react-icons/fa'
 import { IoIosCall, IoMdMail } from 'react-icons/io'
 import Head from 'next/head';
+import Image from 'next/image';
 
 const client = createClient({
   projectId: 'f1a85crc',
@@ -144,7 +145,7 @@ const index = ({ blog }) => {
           </div>
 
           <div>
-            <img src="./contact.svg" alt="" />
+            <Image src="/dev.gif" width='500' height='230' className='aspect-[8/4] object-cover' />
           </div>
         </div>
       </section>

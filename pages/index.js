@@ -8,6 +8,8 @@ import { FaMapMarkerAlt } from 'react-icons/fa'
 import { IoIosCall, IoMdMail } from 'react-icons/io'
 import Head from 'next/head';
 import Image from 'next/image';
+import BannerImg from '../public/banner-img.svg'
+import DevGif from '../public/dev.gif'
 
 const client = createClient({
   projectId: 'f1a85crc',
@@ -35,7 +37,8 @@ const index = ({ blog }) => {
             <p className='text-gray-200 text-md'>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero at qui eum esse voluptate ad earum incidunt ut molestiae? Suscipit nobis ea reiciendis delectus harum ab odio modi in doloribus.</p>
           </div>
           <div>
-            <img src="./banner-img.svg" alt="Banner Image" />
+            {/* <img src="./banner-img.svg" alt="Banner Image" /> */}
+            <Image src={BannerImg}/>
           </div>
         </div>
       </section>
@@ -64,7 +67,7 @@ const index = ({ blog }) => {
               return (
                 <div className='bg-white rounded-xl' key={post.slug.current}>
                   <div className="h-full overflow-hidden">
-                    <Link href={"/blog/" + post.slug.current}><img className='aspect-[3/2] rounded-tl-xl rounded-tr-xl' src={builder.image(post.blogImg)} alt="" /></Link>
+                    <Link href={"/blog/" + post.slug.current}><img src={builder.image(post.blogImg)} className='aspect-[3/2] rounded-tl-xl rounded-tr-xl'/></Link>
                     <div className="p-6 border rounded-xl border-gray-300 border-opacity-80">
                       <h1 className="title-font text-lg font-semibold text-gray-900 mb-3">{post.title}</h1>
                       <p className="leading-relaxed mb-3">{post.metadesc}</p>
@@ -145,7 +148,7 @@ const index = ({ blog }) => {
           </div>
 
           <div>
-            <Image src="/dev.gif" width='500' height='230' className='aspect-[8/4] object-cover' />
+            <Image src={DevGif} className='aspect-[8/4] object-cover' />
           </div>
         </div>
       </section>

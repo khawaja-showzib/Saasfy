@@ -8,11 +8,13 @@ const Header = () => {
         if (ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-full')
             ref.current.classList.add('translate-x-0')
+            document.getElementsByTagName('html')[0].style.overflow = "hidden";
         }
 
         else if (!ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-0')
             ref.current.classList.add('translate-x-full')
+            document.getElementsByTagName('html')[0].style.overflow = "scroll";
         }
     }
 
@@ -49,7 +51,7 @@ const Header = () => {
                     </nav>
                 </section>
 
-                <div ref={ref} className='h-[100vh] overflow-y-auto absolute top-0 right-0 bg-blue-100 p-10 translate-x-full transition-transform transform w-80 z-20'>
+                <div ref={ref} className='h-[100vh] overflow-hidden fixed top-0 right-0 bg-blue-100 p-10 translate-x-full transition-transform transform w-80 z-20'>
                 <Link href='/'><span className='font-extrabold text-2xl text-primary-400'>SaasyFy</span></Link>
                 <RxCross1 className='text-2xl absolute top-10 right-10' onClick={toggleMenu} />
                 <ul className='flex flex-col gap-4 mt-10'>

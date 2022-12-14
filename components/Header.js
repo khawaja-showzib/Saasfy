@@ -14,7 +14,7 @@ const Header = () => {
         else if (!ref.current.classList.contains('translate-x-full')) {
             ref.current.classList.remove('translate-x-0')
             ref.current.classList.add('translate-x-full')
-            document.getElementsByTagName('html')[0].style.overflow = "scroll";
+            document.getElementsByTagName('html')[0].style.overflow = "auto";
         }
     }
 
